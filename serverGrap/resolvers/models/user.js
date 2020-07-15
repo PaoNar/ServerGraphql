@@ -3,10 +3,10 @@
 
 const mongoose = require('mongoose')
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
-const userModel =  Schema({
-    
+const userModel = Schema({
+
     email: {
         type: String
     },
@@ -17,4 +17,4 @@ const userModel =  Schema({
 })
 
 
-module.exports = mongoose.model("users", userModel);
+module.exports = mongoose.model("usuarios", userModel);
