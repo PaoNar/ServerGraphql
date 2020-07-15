@@ -5,17 +5,24 @@ import { ApolloModule ,Apollo} from 'apollo-angular';//apollo
 import { HttpLinkModule,HttpLink } from 'apollo-angular-link-http'//apollo
 import { AppComponent } from './app.component';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { ListComponent } from './list/list.component'//apollo
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {appRoutingModule} from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ApolloModule,
-    HttpLinkModule
+    HttpLinkModule,
+    FormsModule,
+    ReactiveFormsModule,
+    appRoutingModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
