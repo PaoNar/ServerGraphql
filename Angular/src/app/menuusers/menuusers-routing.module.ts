@@ -7,7 +7,7 @@ import { UpdateusersComponent } from './updateusers/updateusers.component';
 InsertusersComponent
 const routes: Routes = [
   { path: '', component: MenuusersComponent },
-  { path: 'inseruser', component: InsertusersComponent },
+  { path: 'insertuser', component: InsertusersComponent },
   { path: 'updateuser', component: UpdateusersComponent },
 ];
 
