@@ -39,7 +39,7 @@ login():void{
     if(this.permisos.decodificarToken(data.token)){
       console.log(data.data[0].rol)
       sessionStorage.setItem('rol', JSON.stringify(data.data[0].rol));
-      this.router.navigate(['/home']);
+      this.router.navigate(['/menu']);
     }else{
      email='';
       password='';

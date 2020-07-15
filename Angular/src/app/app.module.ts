@@ -9,10 +9,19 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {appRoutingModule} from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenucursosComponent } from './menucursos/menucursos.component';
+import { MenuestudiantesComponent } from './menuestudiantes/menuestudiantes.component';
+import { MenuusersComponent } from './menuusers/menuusers.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    MenuComponent,
+    MenucursosComponent,
+    MenuestudiantesComponent,
+    MenuusersComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +32,7 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
     appRoutingModule,
     RouterModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
