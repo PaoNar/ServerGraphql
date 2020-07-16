@@ -6,7 +6,7 @@ let {ObjectID} = require('mongodb')
 
 module.exports = {
     Curso: {
-        asistentes: async ({asistentes}) =>{
+        asistentes: async ({asistentes}) => {
             let db, asistentesData, ids
 
             try{

@@ -5,7 +5,7 @@ const env = require('dotenv').config(),
     { graphqlHTTP } = require('express-graphql'),
     { schema } = require('../schemas/configSchema'),
     isAuth = require('../middleware/Auth'),
-    port = process.env.PORT ||   4000
+    port = process.env.PORT || 3500
 
 let app = require('./app')
 

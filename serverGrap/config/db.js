@@ -1,7 +1,7 @@
 ;
 'use strict'
 
-const {MongoClient} = require('mongodb'),
+const MongooseClient = require('mongoose'),
     {USER_DB,
     PASS_DB,
     HOST_DB,
@@ -14,11 +14,10 @@ const {MongoClient} = require('mongodb'),
         let cliente
 
         try{
-            cliente = await MongoClient.connect( mongoUrl, {
+            cliente = await MongooseClient.connect( mongoUrl, {
                     useUnifiedTopology: true,
                     useNewUrlParser: true
                 }) 
-        connection = cliente.db(NAME_DB)
         console.log('DB conectada...')
         }catch(error){
             console.log(error)
