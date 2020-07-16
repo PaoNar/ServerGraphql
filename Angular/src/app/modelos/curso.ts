@@ -1,3 +1,5 @@
+import { type } from 'os'
+
 export type Cursos ={
     titulo:String;
     profesor:string;
@@ -7,5 +9,10 @@ export type Cursos ={
 }
 
 export type Query = {
-    getCursos:Cursos[]
+    getCursos:Cursos[],
+   
+}
+
+export type Mutations = {
+    nuevoCurso:Cursos[],
 }

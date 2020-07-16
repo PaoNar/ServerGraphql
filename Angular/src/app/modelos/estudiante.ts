@@ -1,5 +1,8 @@
+import { type } from 'os'
+
 export type Estudiantes ={
     apellido:String;
+    nombre:String;
     email:string;
     direccion:string;
     edad:string;
@@ -8,4 +11,9 @@ export type Estudiantes ={
 
 export type Query = {
     getEstudiantes:Estudiantes[]
+}
+
+export type Mutation={
+    nuevoCurso:Estudiantes[];
+    editarEstudiante:Estudiantes[]
 }
